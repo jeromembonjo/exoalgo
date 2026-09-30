@@ -13,7 +13,7 @@ do{
 
 
 
-console.log(nombreAleatoire);
+
         nombreRentre = parseInt(nombreRentre);
 //typer le nombre
 
