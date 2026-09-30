@@ -1,7 +1,7 @@
 
 let nombreAleatoire=Math.random()
 let nombreRentre=0;
-let compteur=0;
+let compteur=1;
 //declaration des variable
 const prompt = require('prompt-sync')();
 
@@ -11,9 +11,9 @@ do{
     nombreRentre=prompt("entrez un nombre?");
 
 
-// Version simplifiee avec prompt-sync
 
 
+console.log(nombreAleatoire);
         nombreRentre = parseInt(nombreRentre);
 //typer le nombre
 
@@ -34,4 +34,4 @@ do{
 
         }while(nombreRentre!==nombreAleatoire)
 
-console.log("barvo");
+console.log("barvo vous avez trouvez en "+compteur);
