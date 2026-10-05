@@ -8,7 +8,7 @@ function pad(num, width) {
 
 const prompt = require('prompt-sync')();
 tailleDuTableuDeMultiplication =prompt('taille Du Tableu De Multiplication ? ')
-console.log(parseInt(tailleDuTableuDeMultiplication+1));
+
 for(let k=0;k<tailleDuTableuDeMultiplication;k++){
     hautdelatable+=pad(parseInt(k+1),6);
 }
