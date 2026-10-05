@@ -7,19 +7,19 @@ function pad(num, width) {
 }
 
 const prompt = require('prompt-sync')();
-tailleDuTableuDeMultiplication =prompt('taille Du Tableu De Multiplication ? ')
+tailleDuTableuDeMultiplication =prompt('taille Du Tableau De Multiplication ? ')
 
 for(let k=0;k<tailleDuTableuDeMultiplication;k++){
     hautdelatable+=pad(parseInt(k+1),6);
 }
-
+console.log(hautdelatable);
 console.log("----|" + "------".repeat(tailleDuTableuDeMultiplication));
 for (let i=0; i<tailleDuTableuDeMultiplication; i++){
     let ligne=pad(i,3)+" |";
 
-    for (let j=0; j<tailleDuTableuDeMultiplication; j++){
+    for (let j=1; j<tailleDuTableuDeMultiplication; j++){
 
-        ligne += pad(parseInt(i+1)*parseInt(j+1),4)+" |";
+        ligne += pad(parseInt(i)*parseInt(j+1),4)+" |";
 
 
     }
